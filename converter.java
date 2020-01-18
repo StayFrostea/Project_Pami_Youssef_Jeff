@@ -11,10 +11,12 @@ public class Converter {
 
     private double celsiusToFarenheit(double C) {
         double result = (C * (9 / 5)) + 32;
+        return result;
     }
 
     private double farenheitToCelsius(double F) {
         double result = (F * (5 / 9)) - 32;
+        return result;
     }
 
     public static void main(String[] args) {
