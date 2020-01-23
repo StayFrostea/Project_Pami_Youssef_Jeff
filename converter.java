@@ -1,3 +1,4 @@
+package com.company;
 public class Converter {
     /*
      * 
@@ -9,18 +10,25 @@ public class Converter {
      * 
      */
 
-    private double celsiusToFarenheit(final double C) {
-        final double result = (C * (9 / 5)) + 32;
-        return result;
+    
+    private double celciusToFarenheit(double c){
+          return (c * (1.8)) + 32;
     }
-
-    private double farenheitToCelsius(final double F) {
-        final double result = (F * (5 / 9)) - 32;
-        return result;
+    
+    private double farenheitToCelcius(double f){
+        return (f - 32) * (0.56);
     }
-
-    public static void main(final String[] args) {
-        System.out.println(celciusToFarenheit(180));
-        System.out.println(farenheitToCelsius(250));
+    
+    public static void main(String[] args) {
+        Converter convVal = new Converter();
+    
+        double f = convVal.celciusToFarenheit(180);
+        double c = convVal.farenheitToCelcius(250);
+    
+        System.out.print(c);
+        System.out.println(" " + "degrees C");
+        System.out.print(f);
+        System.out.print(" " + "degrees F");
     }
 }
+    
