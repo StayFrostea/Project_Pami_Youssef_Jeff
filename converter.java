@@ -18,6 +18,11 @@ public class Converter {
     private double farenheitToCelcius(double f){
         return (f - 32) * (0.56);
     }
+
+    private double kilometersToMiles(final double M)
+    {
+        return (M*0.621371);
+    }
     
     public static void main(String[] args) {
         Converter convVal = new Converter();
