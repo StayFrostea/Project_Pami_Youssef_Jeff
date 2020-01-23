@@ -19,6 +19,11 @@ public class Converter {
         return result;
     }
 
+    private double kilometersToMiles(final double M)
+    {
+        return (M*0.621371);
+    }
+
     public static void main(final String[] args) {
         System.out.println(celciusToFarenheit(180));
         System.out.println(farenheitToCelsius(250));
